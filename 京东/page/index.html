@@ -34,6 +34,12 @@
             border-bottom: 2px solid red;
         }
 
+        .logo-search>div{
+            height: 50px;
+            width: 1190px;
+            margin: 0 auto;
+        }
+
         .logo{
             width: 125px;
             height: 50px;
@@ -43,7 +49,6 @@
             float: left;
             /*margin-left: 6%;*/
             /*margin-right: 14%;*/
-            margin-left: 81px;
             margin-right: 189px;
         }
         .search{
@@ -92,6 +97,12 @@
             background-color: #e3e4e5;
             position: relative;
         }
+        .x-nav>div{
+            width: 1190px;
+            height: 30px;
+            margin: 0 auto;
+            position: relative;
+        }
         .big-logo{
             width: 190px;
             height: 175px;
@@ -100,19 +111,23 @@
             background-size: cover;
             position: absolute;
             top: 0px;
-            left: 81px;
+            /*left: 81px;*/
+            /*left: 18.8%;*/
+            left: 2px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,.5);
         }
-        .x-nav>ul{
+        .x-nav>div>ul{
             list-style: none;
             /*width: 73%;*/
-            width: 985px;
+            width: 960px;
             height: 30px;
             position: absolute;
             background-color: #e3e4e5;
-            left: 285px;
-  
+            /*left: 285px;*/
+            /*left: 31%;*/
+            right: 0px;
         }
-        .x-nav>ul>li{
+        .x-nav>div>ul>li{
             padding: 0px 5px;
             height: 29px;
             line-height: 30px;
@@ -122,7 +137,7 @@
             position: relative;
             border: 1px solid transparent;
         }
-        .x-nav>ul>li:first-child{
+        .x-nav>div>ul>li:first-child{
             margin-right: 120px;
             border: 1px solid transparent;
         }
@@ -137,15 +152,15 @@
         .cuizhi:before{
             content: "|";
         }
-        .x-nav>ul>li>a{
+        .x-nav>div>ul>li>a{
             text-decoration: none;
             color: #999;
             font-size: 13px;
         }
-        .x-nav>ul>li:hover{
+        .x-nav>div>ul>li:hover{
             color: red;
         }
-        .x-nav>ul a:not(.beijin-a):hover{
+        .x-nav>div>ul a:not(.beijin-a):hover{
             color: red;
         }
         .icon-dizhi{
@@ -183,7 +198,7 @@
             background-color: red;
         }
         
-        .x-nav>ul>li:nth-child(1):hover{
+        .x-nav>div>ul>li:nth-child(1):hover{
             background-color: white;
             border: 1px solid rgba(9,9,9,.2);
             border-bottom: none;
@@ -197,7 +212,7 @@
             opacity: .5;
             margin-left: 60px;
         }
-        .x-nav>ul>li:nth-child(1):hover .dizhi{
+        .x-nav>div>ul>li:nth-child(1):hover .dizhi{
             display: block;
         }
         .jindong{
@@ -240,12 +255,12 @@
         .jindong li a:hover{
             color: red;
         }
-        .x-nav>ul>li:nth-child(7):hover{
+        .x-nav>div>ul>li:nth-child(7):hover{
             background-color: white;
             border: 1px solid rgba(9,9,9,.2);
             border-bottom: none;
         }
-        .x-nav>ul>li:nth-child(7):hover .jindong{
+        .x-nav>div>ul>li:nth-child(7):hover .jindong{
             display: block;
         }
         .fuwu{
@@ -295,12 +310,12 @@
         .fuwu li a:hover{
             color: red;
         }
-        .x-nav>ul>li:nth-child(13):hover{
+        .x-nav>div>ul>li:nth-child(13):hover{
             background-color: white;
             border: 1px solid rgba(9,9,9,.2);
             border-bottom: none;
         }
-        .x-nav>ul>li:nth-child(13):hover .fuwu{
+        .x-nav>div>ul>li:nth-child(13):hover .fuwu{
             display: block;
         }
         .daohang{
@@ -372,12 +387,12 @@
         .daohang li a:hover{
             color: red;
         }
-        .x-nav>ul>li:nth-child(15):hover{
+        .x-nav>div>ul>li:nth-child(15):hover{
             background-color: white;
             border: 1px solid rgba(9,9,9,.2);
             border-bottom: none;
         }
-        .x-nav>ul>li:nth-child(15):hover .daohang{
+        .x-nav>div>ul>li:nth-child(15):hover .daohang{
             display: block;
         }
 
@@ -386,7 +401,7 @@
 
         .y-line{
             width: 5px;
-            height: 600px;
+            height: 100%;
             background-color: #7a6e6e;
             position: fixed;
             top: 0px;
@@ -398,12 +413,12 @@
             height: 215px;
             position: fixed;
             right: 0px;
-            bottom: 130px;
+            bottom: 330px;
             z-index: 199;
         }
         .y-nav-1{
             width: 34px;
-            height: 75px;
+            height: 71px;
             position: fixed;
             right: 0px;
             bottom: 0px;
@@ -417,7 +432,7 @@
         .y-nav-1 ul{
             list-style: none;
             width: 34px;
-            height: 75px;
+            height: 71px;
         }
         .y-nav li,.y-nav-1 li{
             width: 34px;
@@ -484,6 +499,7 @@
             </a>
         </div>
         <div class="x-nav">
+            <div>
             <div class="big-logo"></div>
             <ul>
                 <li style="padding: 0 10px">
@@ -663,6 +679,7 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </div>
         <div class="box-content">
             <div class="header">
@@ -822,14 +839,16 @@
             </div>
             <div class="content">
                 <div class="logo-search">
-                    <div class="logo"></div>
-                    <div class="search">
-                        <div><input type="text" placeholder="秒变帅哥"/></div>
-                        <div><i class="iconfont icon-xiangji"></i></div>
-                        <div><i class="iconfont icon-sousuo"></i></div>
+                    <div>
+                        <div class="logo"></div>
+                        <div class="search">
+                            <div><input type="text" placeholder="秒变帅哥"/></div>
+                            <div><i class="iconfont icon-xiangji"></i></div>
+                            <div><i class="iconfont icon-sousuo"></i></div>
+                        </div>
                     </div>
                 </div>
-                <div class="con-second"></div>
+                <div class="con-second"><img src="../res/捕获.PNG"/></div>
                 <div class="con-third"></div>
             </div>
             <div class="footer">
